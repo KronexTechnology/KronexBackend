@@ -4,7 +4,7 @@ const schema = mongoose.Schema({
     email :{
         type:String,
     }
-})
+},{timestamp:true})
 
 
 

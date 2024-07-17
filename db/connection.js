@@ -33,7 +33,7 @@ const mongoose = require("mongoose");
 const mongoUrl = process.env.MONGO_URL;
 
 // Connect to MongoDB using the environment variable
-mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoUrl)
   .then(() => {
     console.log("Connected to MongoDB");
   })
