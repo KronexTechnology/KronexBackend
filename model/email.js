@@ -3,8 +3,12 @@ const mongoose = require("mongoose");
 const schema = mongoose.Schema({
     email :{
         type:String,
-    }
-},{timestamp:true})
+        required:true,
+    },
+    day: String,
+    month: String,
+    year: String,
+})
 
 
 
